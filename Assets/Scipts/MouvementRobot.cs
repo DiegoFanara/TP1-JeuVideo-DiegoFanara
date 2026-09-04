@@ -16,11 +16,15 @@ public class MouvementRobot : MonoBehaviour
     private void Update()
     {
         // TODO : reconstruire la lecture des commandes et la direction normalisée.
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+        direction = new Vector2(horizontal, vertical).normalized;
     }
 
     private void FixedUpdate()
     {
         // TODO : déplacer le robot en tenant compte du temps physique.
+        corps.MovePosition(corps.position + direction * vitesse * Time.fixedDeltaTime);
     }
 
     /*
