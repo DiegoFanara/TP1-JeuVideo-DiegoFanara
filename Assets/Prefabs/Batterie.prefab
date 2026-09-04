@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 7544603335064820705}
   - component: {fileID: 7007360363352721918}
   - component: {fileID: 4614336004620249814}
+  - component: {fileID: 7665520934189278534}
   m_Layer: 0
   m_Name: Batterie
-  m_TagString: Untagged
+  m_TagString: Batterie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,3 +138,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7665520934189278534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8849796386807657172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36c44964d13af604daa20925ec6f52c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Collecteur
+  objectif: 3
+  porteSortie: {fileID: 0}
