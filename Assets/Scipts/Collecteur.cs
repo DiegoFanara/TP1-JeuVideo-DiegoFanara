@@ -24,11 +24,12 @@ public class Collecteur : MonoBehaviour
         // TODO : ramasser la batterie et mettre le compteur à jour.
 
         if (!autre.CompareTag("Batterie")){
-            batteriesCollectees++;
             Debug.Log($"Batteries : {batteriesCollectees}/{objectif}");
-            Destroy(gameObject);
+            batteriesCollectees++;
+            Debug.Log($"Batteries : {batteriesCollectees} 2");
         }
-
+        
+        Debug.Log($"Batteries : {batteriesCollectees} 3");
         // TODO : déverrouiller la porte lorsque l'objectif est atteint.
 
         if (batteriesCollectees >= objectif){

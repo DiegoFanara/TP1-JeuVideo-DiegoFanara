@@ -4,11 +4,20 @@ public class ZoneInterdite : MonoBehaviour
 {
     [SerializeField] private Transform pointDepart;
 
+    
+
     private void OnTriggerEnter2D(Collider2D autre)
     {
+
         // TODO : filtrer l'objet touché.
         // TODO : empêcher le déplacement si PointDepart est absent.
         // TODO : retourner le joueur à sa position initiale.
+
+        if (autre.CompareTag("Player")){
+            autre.transform.position = pointDepart.position;
+            Debug.Log("Le robot retourne au point de départ.");
+        }
+        
     }
 
     /*

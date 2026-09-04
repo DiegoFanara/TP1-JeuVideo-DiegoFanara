@@ -6,6 +6,12 @@ public class PorteSortie : MonoBehaviour
     {
         // TODO : ignorer tout objet qui n'est pas le joueur.
         // TODO : annoncer la réussite et faire disparaître le joueur.
+
+        if (!autre.CompareTag("Player")){
+            Debug.Log("MISSION RÉUSSIE !");
+            return;
+            Destroy(autre.gameObject);
+        }
     }
 
     /*
